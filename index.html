@@ -1651,7 +1651,111 @@
                 padding: 0 var(--space-md);
             }
         }
-    </style>
+        @media (max-width: 768px) {
+    .section {
+        padding: 0.7rem 0.5rem !important;
+        margin-bottom: 0.5rem !important;
+    }
+    .about-grid,
+    .projects-grid {
+        gap: 0.5rem !important;
+        margin-top: 0.5rem !important;
+    }
+    .section-title {
+        margin-bottom: 0.5rem !important;
+        font-size: 1.2rem !important;
+    }
+}
+@media (max-width: 480px) {
+    .section {
+        padding: 0.5rem 2vw !important;
+        margin-bottom: 0.3rem !important;
+    }
+    .about-grid,
+    .projects-grid {
+        gap: 0.3rem !important;
+        margin-top: 0.3rem !important;
+    }
+    .section-title {
+        font-size: 1rem !important;
+        margin-bottom: 0.3rem !important;
+    }
+}
+/* --- Mobile Space Optimization: FINAL OVERRIDE --- */
+@media (max-width: 768px) {
+    .section {
+        padding: 0.5rem 0.3rem !important;
+        margin-bottom: 0.3rem !important;
+        max-width: 100vw !important;
+    }
+    .about-grid,
+    .projects-grid {
+        gap: 0.3rem !important;
+        margin-top: 0.3rem !important;
+    }
+    .section-title {
+        margin-bottom: 0.3rem !important;
+        font-size: 1.1rem !important;
+    }
+    .executive-dashboard {
+        margin: 0.3rem 0 !important;
+        padding: 0.5rem !important;
+    }
+}
+@media (max-width: 480px) {
+    .section {
+        padding: 0.3rem 1vw !important;
+        margin-bottom: 0.2rem !important;
+        max-width: 100vw !important;
+    }
+    .about-grid,
+    .projects-grid {
+        gap: 0.2rem !important;
+        margin-top: 0.2rem !important;
+    }
+    .section-title {
+        font-size: 1rem !important;
+        margin-bottom: 0.2rem !important;
+    }
+    .executive-dashboard {
+        margin: 0.2rem 0 !important;
+        padding: 0.3rem !important;
+    }
+}
+/* ULTRA FOCUSED: Remove space between Strategic Vision & Executive Leadership and Strategic Initiative Portfolio on mobile */
+@media (max-width: 768px) {
+    #about.section {
+        margin-bottom: 0 !important;
+        padding-bottom: 0 !important;
+    }
+    #projects.section {
+        margin-top: 0 !important;
+        padding-top: 0 !important;
+    }
+    .about-grid {
+        margin-bottom: 0 !important;
+    }
+    .projects-grid {
+        margin-top: 0 !important;
+    }
+}
+@media (max-width: 480px) {
+    #about.section {
+        margin-bottom: 0 !important;
+        padding-bottom: 0 !important;
+    }
+    #projects.section {
+        margin-top: 0 !important;
+        padding-top: 0 !important;
+    }
+    .about-grid {
+        margin-bottom: 0 !important;
+    }
+    .projects-grid {
+        margin-top: 0 !important;
+    }
+}
+        </style>
 </head>
 <body>
     <!-- Premium Loading Screen -->
