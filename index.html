@@ -1197,6 +1197,147 @@
             color: var(--executive-gold);
         }
 
+        /* --- Mobile Space Optimization --- */
+@media (max-width: 768px) {
+    .section {
+        padding: var(--space-md) var(--space-xs);
+        margin-bottom: var(--space-md);
+    }
+    .about-card,
+    .project-card,
+    .glass-premium,
+    .glass-executive,
+    .award-card,
+    .education-card {
+        padding: var(--space-md) var(--space-xs);
+        margin-bottom: var(--space-md);
+    }
+    .about-grid,
+    .projects-grid,
+    .awards-grid,
+    .education-grid,
+    .certs-grid {
+        gap: var(--space-md);
+        margin-top: var(--space-md);
+    }
+    .section-title {
+        margin-bottom: var(--space-lg);
+        font-size: 2rem;
+    }
+    .dashboard-title {
+        font-size: 1.5rem;
+        margin-bottom: var(--space-md);
+    }
+    .kpi-card {
+        padding: var(--space-md) var(--space-xs);
+        margin-bottom: var(--space-xs);
+    }
+    .kpi-grid {
+        gap: var(--space-md);
+    }
+    .impact-metrics {
+        gap: var(--space-md);
+        margin: var(--space-md) 0;
+    }
+    .metric-card {
+        padding: var(--space-md) var(--space-xs);
+        margin-bottom: var(--space-xs);
+    }
+    .skills-category {
+        margin-bottom: var(--space-lg);
+    }
+    .skills-grid {
+        gap: var(--space-xs);
+    }
+    .skill-item {
+        padding: var(--space-xs);
+        font-size: 0.85rem;
+    }
+    .cert-category {
+        padding: var(--space-md) var(--space-xs);
+    }
+    .cert-list li {
+        margin-bottom: var(--space-xs);
+        padding: var(--space-xs) var(--space-sm);
+        font-size: 0.95rem;
+    }
+    .award-card {
+        padding: var(--space-md) var(--space-xs);
+    }
+    .award-title {
+        font-size: 1.1rem;
+        margin-bottom: var(--space-xs);
+    }
+    .education-card {
+        padding: var(--space-md) var(--space-xs);
+    }
+    .degree-title {
+        font-size: 1.1rem;
+        margin-bottom: var(--space-xs);
+    }
+    .university {
+        font-size: 1rem;
+        margin-bottom: var(--space-xs);
+    }
+    .performance,
+    .duration-edu {
+        font-size: 0.95rem;
+        margin-bottom: var(--space-xs);
+    }
+    .learning-title {
+        font-size: 1rem;
+        margin-bottom: var(--space-xs);
+    }
+    .contact-form {
+        padding: var(--space-xs);
+    }
+    .form-group {
+        margin-bottom: var(--space-md);
+    }
+    .form-group label {
+        font-size: 1rem;
+        margin-bottom: var(--space-xs);
+    }
+    .form-group input,
+    .form-group textarea {
+        padding: var(--space-xs);
+        font-size: 0.95rem;
+    }
+}
+
+/* Even more compact for very small screens */
+@media (max-width: 480px) {
+    .section {
+        padding: var(--space-xs) 2vw;
+        margin-bottom: var(--space-xs);
+    }
+    .section-title {
+        font-size: 1.3rem;
+        margin-bottom: var(--space-md);
+    }
+    .about-card,
+    .project-card,
+    .glass-premium,
+    .glass-executive,
+    .award-card,
+    .education-card {
+        padding: var(--space-xs) 2vw;
+        margin-bottom: var(--space-xs);
+    }
+    .skills-grid {
+        grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));
+        gap: 2px;
+    }
+    .skill-item {
+        font-size: 0.8rem;
+        padding: 2px 4px;
+    }
+    .cert-list li {
+        font-size: 0.85rem;
+        padding: 2px 6px;
+    }
+}
+
         /* Responsive Design Excellence */
         @media (max-width: 768px) {
             .hamburger {
